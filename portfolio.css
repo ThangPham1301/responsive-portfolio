@@ -1,0 +1,99 @@
+.portfolio__title h2 {
+    position: relative;
+
+    color: var(--clr-primary);
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-bottom: 2rem;
+
+    z-index: 2;
+}
+
+.portfolio__title h2::after {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 7rem;
+    height: 0.2rem;
+    background-color: var(--clr-primary);
+}
+
+.portfolio__title h2::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 17rem;
+    height: 0.2rem;
+    background-color: var(--color-primary);
+}
+
+
+.portfolio__title {
+    position: relative;
+}
+.portfolio__title .title__under {
+    font-size: 9rem;
+    color: rgba(21, 27, 41, 0.5);
+    font-weight: 700;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* z-index: dùng để hiện thị element nào nằm lên trên element nào. z-index thằng nào cao hơn thì sẽ nằm lên trên những thằng còn lại */
+
+    /* 
+        chỉ sử dụng z-index khi
+        position: absolute, relative, fixed, sticky
+    */
+
+    z-index: 1;
+
+
+    line-height: .7;
+}
+.btn__portfolio{
+    padding: 1rem 2.5rem;
+    background-color: #FEC544;
+    color: #070d1b;
+    border: none;
+    border-radius: 50px;
+    margin-top: 2rem;
+    transition: all 0.4s ease;
+    text-transform: capitalize;
+    font-weight: 500;
+    min-width: 170px;
+  
+}
+.btn__portfolio__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn__portfolio:hover{
+    box-shadow: 0px 5px 10px 0px #fec64450;
+    transform: translateY(-1px);
+}
+.btn__portfolio:hover{
+    box-shadow: #FEC544;
+    color: #070d1b;
+}
+.portfolio__list{
+    margin-top: 3rem;
+}
+/*  */
